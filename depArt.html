@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="depcs.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <title>Your result</title>
+    <script type="text/javascript">
+        function change() {
+            var c = sessionStorage.getItem("c");
+
+            if (c >= 0 && c <= 8) {
+                document.getElementById("h1").innerHTML = "You do not have depression"
+            } else if (c >= 5 && c <= 9) {
+                document.getElementById("h1").innerHTML = "Mild Indication of depression";
+            } else if (c >= 10 && c <= 14) {
+                document.getElementById("h1").innerHTML = "Moderate indication of depression";
+            } else if (c >= 15 && c <= 19) {
+                document.getElementById("h1").innerHTML = "Moderately severe indication of depression";
+            } else if (c >= 20 && c <= 27) {
+                document.getElementById("h1").innerHTML = "Severe Indication of depression";
+            }
+        }
+    </script>
+</head>
+
+<body onload="change()">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+
+
+    <nav>
+        <a href="/index.html"><img src="img/logo_transparent (7).png" alt="M.A.P" class="logo"></a>
+        <ul>
+
+            <li><a href="quiz.html">TEST?</a></li>
+            <li><a href="">FORUM</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="/destress.html">DESTRESS</a></li>
+        </ul>
+    </nav>
+    <h1>Test result:</h1>
+    <h1 id="h1"></h1>
+    <br>
+    <h2>Here are some articles, to know more about depression.</h2>
+    <div class="cont1">
+
+        <h2>What Is Depression?</h2>
+
+        <p>Imagine depression as a weather forecast for your mood. There’s a 100% chance of clouds and showers on
+            Monday. Tuesday, too. Wednesday looks just as grim. Actually, the next two weeks show nothing but storms.
+            You’re stuck in this crappy weather pattern and there seems to be no relief in sight. </p>
+        <p>
+            You might feel alone, but you have lots of company. Depression—or major depressive disorder (MDD), the term
+            for clinical depression—is one of the most common mental health conditions, affecting an estimated 350
+            million people in all age groups.
+        </p>
+        <p>
+            And let’s just get this out of the way: Depression isn’t the same as being sad. It’s normal to feel blue or
+            unmotivated from time to time, but depression is more constant. And, it has a real, biological basis. It’s a
+            serious mood disorder that can negatively impact your health and quality of life, as well as those closest
+            to you.
+        </p>
+        <p>
+            The clinical definition, based on the fifth edition of the Diagnostic and Statistical Manual of Mental
+            Health Disorders (DSM-5), is “a period of at least two weeks when a person experienced a depressed mood or
+            loss of interest or pleasure in daily activities, and had a majority of specified symptoms, such as problems
+            with sleep, eating, energy, concentration, or self-worth.” This definition excludes grief after mourning.
+        </p>
+        <p>
+            As many as two-thirds of people struggling with depression literally try to grin and bear it—they don’t seek
+            or receive the help they need to cope—and those who do often let months go by before bringing it up with
+            their doctor. Depression can stick around for years if left untreated and can lead to physical symptoms or
+            even thoughts of suicide. Even if an episode resolves on its own, it could recur.
+            Thankfully, the stigma around mental health conditions like depression continues to lift. And with screening
+            for depression now available within primary care, the hope is that more people gain access to the treatment
+            they need.
+        </p>
+
+    </div>
+
+    <div class="cont2">
+
+        <h2>How Common Is Depression?</h2>
+        <p>
+            Major depression is one of the most common mental illnesses in the country. An estimated 17.3 million adults
+            in the US reported having at least one major depressive episode over the course of a year, a 2017 report by
+            the Substance Abuse and Mental Health Services Administration (SAMHSA) shows.
+            That’s 7.1% of all adults ages 18 and older. Women have a higher prevalence of experiencing a major
+            depressive episode than men (8.7% compared to 5.3% for adult males).
+        </p>
+
+        <p>
+            Depression is especially crushing for the workforce: It’s the number one leading cause of disability
+            worldwide, according to the World Health Organization. The total economic burden of MDD is estimated to be
+            $210.5 billion per year in the United States alone—a figure that reflects costs associated with missed days,
+            reduced productivity, treatment for depression, and suicide.
+        </p>
+
+
+    </div>
+
+    <div class="img">
+        <img src="img/depression-statistics-us-chart-1120x575.jpg" alt="Statistics" height="500">
+    </div>
+
+    <div class="cont3">
+        <h2>What Are the Causes of Depression?</h2>
+        <p>
+            There is no one single cause for the onset of depression because a combination of genetic, biological,
+            environmental, and psychological factors all play a role. These include: <br> <br>
+            • The brain’s physical structure or chemistry. In some people with depression, brain scans indicate a
+            smaller hippocampus, which plays a role in long-term memory. Research shows that ongoing exposure to stress
+            can impair the growth of nerve cells in this part of the brain. <br>
+            • Serotonin levels are out of balance. Here’s another thing that’s going on in the brain that may be
+            connected, the serotonin receptors act differently than in someone without depression. This is why some of
+            the treatment drugs work with serotonin. <br>
+            • History of depression in the family. Someone with a parent or sibling with MDD has a two or three-times
+            greater risk of developing depression than the average person (or a 20-30% chance vs. 10%). <br>
+            • Genetic code is different. When you’re born you get either a short or a long gene from each parent. These
+            are called alleles. It turns out having one or more short ones is linked to having more of a proclivity
+            towards being depressed when something bad happens. <br>
+            • History of other disorders or concurrent mental health conditions. Post-traumatic stress, substance use
+            disorders, and learning disabilities are commonly associated with or can perpetuate depression. Anxiety is a
+            big one: Up to 50% of people who have depression also have an anxiety disorder. <br>
+            • Stressful or major life events. Abuse, financial issues, the death of a loved one, the loss of a job—these
+            situations can all trigger depression. But even positive events like a big move, getting married,
+            graduating, or retiring can make you feel depressed, too. For one these events alter your routine, but they
+            can also trigger feelings that whatever the success or happy occasion is, isn’t deserved. <br>
+            • Hormone changes. Menstrual cycles, pregnancy, and giving birth can cause bouts of depression. <br>
+            • Certain physical conditions, like chronic pain or headaches, show a correlation with—or may spur
+            on—depression. <br>
+            • Certain medications, like sleeping aids and blood pressure medication, may also cause symptoms of
+            depression.
+        </p>
+    </div>
+    <div class="cont4">
+        <h2>What Are the Different Types of Depression?</h2>
+        <p>
+            Major depression is the classic type of depression and what’s diagnosed, or labeled, as MDD (it’s also known
+            as unipolar depression). People with major depression have symptoms of depression most of the day, nearly
+            every day, for episodes of at least two weeks and can experience recurrent episodes throughout their lives.
+            Under MDD, you can further break down depression into several specific subtypes:
+        </p><br>
+        <p>
+            • Seasonal Affective Disorder (SAD) emerges during particular seasons of the year—commonly winter—brought on
+            from diminished natural sunlight. <br>
+            • Atypical Depression’s biggest differentiator is mood reactivity. People with this kind of depression see
+            their mood improve when something positive happens. <br>
+            • Bipolar Disorder used to be called manic depression and involves alternating between episodes of
+            depression and extremely elevated energy. <br>
+            • Psychotic Depression occurs when a person experiences depressive episodes so severe they start having
+            false fixed beliefs (delusions) or hearing or seeing things that others can’t hear or see (hallucinations).
+            <br>
+            • Postpartum Depression occurs after giving birth. Mothers may feel disconnected from their new baby or fear
+            that they could hurt their child. <br>
+            • Premenstrual Dysphoric Disorder is a severe type of depression that shows up during the second half of the
+            menstrual cycle. <br>
+            • Situational Depression, or adjustment disorder, refers to depression that is triggered by a significant
+            life-changing event. <br>
+            • Persistent Depressive Disorder used to be called dysthymia. It’s a chronic form of depression—usually with
+            milder symptoms—in which an episode lingers for a long period of time, sometimes two years or more. It could
+            be described as feeling like you’re living on autopilot.
+        </p>
+
+    </div>
+
+    <div class="img">
+        <img src="img/Signs-and-Symptoms-of-Depression-1097x1536.png" alt="Signs and symptopms" height="800">
+    </div>
+    <div class="cont5">
+        <h2>Signs and Symptoms of Depression</h2>
+        <p>
+            Experiencing a combination of these symptoms—along with at least a low mood or loss of pleasure—for a period
+            of at least two weeks could signify a depressive episode <br>
+            • Persistent feelings of sadness, hopelessness, worthlessness, or emptiness. You generally feel down most of
+            the time. <br>
+            • Loss of interest in activities—even in stuff you used to love. It’s like you just lose motivation and feel
+            disinterested. <br>
+            • Trouble sleeping or oversleeping. You have a hard time falling asleep, staying asleep, or getting out of
+            bed. We’re not talking the occasional snooze-hitting; this is like your body is covered in a 50-pound
+            weighted blanket and you can’t get out of bed. <br>
+            • Appetite or weight changes. You’re overeating, lose your appetite, or experience significant weight gain
+            or loss without dieting (about 20 percent of your weight). Sometimes people get a little rush from eating
+            and so they seek that lift and it leads to over-eating; other times though you may just have no appetite at
+            all. <br>
+            • Fatigue or decreased energy. You feel exhausted all the time, or you feel like you can spend days on the
+            couch or in bed. <br>
+            • Difficulty thinking clearly or quickly, remembering details, concentrating, or making decisions. You feel
+            distracted and focusing seems impossible. <br>
+            • Irritability, frustration, or pessimism. Your mood and headspace feel negative most of the time. <br>
+            • Physical aches and pains. You may have headaches, stomachaches, or neck tension. <br>
+            • Recurrent thoughts of death or suicide, with or without a plan to actually do it. <br>
+
+        </p>
+    </div>
+
+    <div class="cont6">
+        <h2>What Does Depression Look Like?</h2>
+
+        <p>
+            We’ll raise your question with a few Q’s of our own: Are you female? Are you a teen? Depression can also
+            affect different ages and genders in unique ways:
+        </p>
+        <p>
+            Women are more likely to ruminate (worry, dwell on, or rehash negative feelings). This can look like
+            negative self-talk, sudden crying spells, feelings of guilt, or blaming oneself. Women are also more likely
+            to have depression at the same time as an anxiety disorder, such as panic disorder, eating disorder, or
+            obsessive-compulsive behavior.
+            Men with depression are more likely to show signs of irritability, anger, apathy, escapist behavior (like
+            spending more time at work), or reckless behavior (like misusing alcohol or other substances).
+
+        </p>
+        <p>
+            Younger people can struggle with depression and MDD (even though the average age of onset is 32). Children
+            and teens may sometimes exhibit oversensitivity, social withdrawal, poor school performance, frequent
+            physical complaints (like headaches and stomachaches), or feelings of incompetence and despair (like they
+            can’t do anything right or that everything is their fault).
+        </p>
+        <p>
+            Older adults and the elderly are often misdiagnosed or undertreated for depression because their symptoms
+            can be mistaken for other disorders (for example, confusion or memory problems caused by depression can look
+            like Alzheimer’s disease), or they may assume their feelings are just an inevitable part of aging. For many,
+            sadness isn’t the biggest indicator of depression; instead, physical complaints (aches and pains, worsening
+            headaches) are often the predominant symptom. Sleep trouble, low motivation, neglect of personal care or
+            hygiene, and fixation on death are other signs of depression in older adults.
+        </p>
+    </div>
+
+    <div class="cont7">
+
+        <h2>How Is Depression Diagnosed?</h2>
+        <p>
+            These days, a routine doctor’s visit with your general health practitioner may be all it takes to receive a
+            diagnosis. Standard screening tools like the Patient Health Questionnaire (PHQ-9)—a survey of yes, nine
+            items, that physicians use to assess the severity of depression—are becoming widely used in primary care
+            settings to screen for the condition.
+        </p>
+        <p>
+            In fact, “most patients with depression are going to be diagnosed and treated by primary care doctors, not
+            specialists or psychiatrists,” says James Murrough, M.D., Ph.D., Director of the Depression and Anxiety
+            Center for Discovery and Treatment at Mount Sinai.
+        </p>
+        <p>
+            Depression is mainly diagnosed by history and clinical presentations, or a specific pattern of symptoms,
+            says Dr. Murrough, which is to say there’s no blood test for MDD. But if you have symptoms like changes in
+            sleep or appetite, your doctor may look into other conditions unrelated to mental health (a thyroid issue is
+            the classic example).
+        </p>
+        <p>
+            “The first thing your doctor might do is order blood tests—not to make the diagnosis of depression, but to
+            rule out things that could be masquerading as depression,” explains Dr. Murrough. “For example, an
+            underactive thyroid can present as low mood and feeling sluggish, and iron deficiency anemia is another
+            reason why some people might have low energy.”
+        </p>
+        <p>
+            Ultimately, doctors are looking for a consistent pattern of symptoms that represent a “clear change from the
+            way someone was before, as well as objective signs of functional impairment,” says Dr. Murrough. They’ll ask
+            when your symptoms started and how you felt before, look at your family history, and use your score from the
+            PHQ-9 to aid in the diagnosis. It’s also important to note that when a patient mentions thoughts of suicide,
+            that’s a major red flag.
+        </p>
+    </div>
+
+    <div class="cont8">
+        <h2>Depression and Pregnancy</h2>
+        <p>Between hormonal changes, stress, and other environmental changes, getting pregnant can supercharge the
+            D-word.</p>
+        <h3 class="cnt8h3">Perinatal Depression</h3>
+        <p>
+            What to expect when you’re expecting? For as many as 23% of people who conceive, this period can come with
+            the unwelcome arrival of depressive symptoms. Perinatal depression includes major and minor depressive
+            episodes that occur during pregnancy or in the first 12 months after delivery.
+        </p>
+        <p>
+            During pregnancy, hormone changes can affect the chemicals in your brain, and it can sometimes result in
+            exacerbated anxiety or depression. But possible triggers can also include infertility treatments, previous
+            pregnancy loss, and having complications during pregnancy. The signs and symptoms for depression during
+            pregnancy, also known as antepartum depression, are similar to MDD and can be effectively treated with the
+            right help (even with drug-free approaches like talk therapy).
+        </p>
+        <h3 class="cnt8h3">The Post-Baby Blues</h3>
+        <p>
+            If you experience a bit of emotional “baby blues” after childbirth—mood swings, crying spells, and anxiety
+            that keeps you up at night—go easy on yourself because most new mothers go through this (hello, major life
+            change!). If after two weeks, these symptoms have persisted, it could be postpartum depression.
+        </p>
+        <p>
+            Studies have shown that one in seven mothers experience postpartum depression in the year after they give
+            birth. People with a previous history of depression may have a higher chance of developing postpartum
+            depression. Talk with your doctor about a game plan for treatment and make it a point to ask for help from
+            friends and family whenever you need it (parenthood is stressful enough!). And as always, remember that
+            perinatal depression is neither shameful, nor a character flaw or sign of weakness.
+        </p>
+    </div>
+
+    <div class="cont9">
+        <h2>What Are the Treatments for Depression?</h2>
+        <p>There are ever-evolving ways to treat depression, and the mix will depend on everything from how long you’ve
+            had it and the severity of your symptoms.</p>
+        <h3 class="cnt8h3">Medications</h3>
+
+        <p>
+            There’s no shame in taking medication to manage your depression. People routinely take medication for
+            physical ailments, and having a mental illness isn’t any different.
+        </p>
+
+        <p>
+            Antidepressants work by affecting neurotransmitters in the brain. Common types of antidepressants include
+            selective serotonin reuptake inhibitors (SSRIs), serotonin and norepinephrine reuptake inhibitors (SNRIs),
+            and norepinephrine-dopamine reuptake inhibitors (NDRIs).Speak with your doctor to determine which drug is
+            right for you. If you’re worried about the possible side effects, remember that any medication can be
+            tapered down or ceased.
+            One major development that’s under psychopharmacological
+            research for treatment-resistant depression is ketamine, which is used in medicine as an anesthetic. “It’s
+            important to know that ketamine is beneficial for only a very specific subset of the population,” says
+            psychologist Jessica Stern, Ph.D., clinical assistant professor in the Department of Psychiatry at NYU
+            Langone Health, “and is only to be used after several other full courses of therapies—both psychotherapy and
+            multiple other medications—have been tried extensively.” Meaning, ketamine wouldn’t normally be a first or
+            second line of treatment.
+        </p>
+        <h3 class="cnt8h3">Therapy</h3>
+        <p>
+            Who doesn’t go to therapy these days? It’s as much a part of regular conversation as the weather.
+            Psychotherapy (aka talk therapy), sometimes along with medication, can be highly beneficial in treating,
+            managing, and reducing the duration of an episode of depression.
+        </p>
+        <p>
+            “Evidence-based treatments, such as Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy,
+            and Dialectical Behavior Therapy have been shown to be very effective in the treatment of depression,” says
+            Dr. Stern. “These psychotherapies are active skills-based therapies that help individuals develop and
+            maintain skills to manage difficult thoughts and feelings.”
+            Trained experts like psychiatrists and psychologists can offer many types of these treatments, from light
+            therapy for seasonal affective disorder to CBT that works to change your thought processes. One goal of CBT
+            includes behavioral activation, an effective treatment and technique in which a therapist can help you
+            schedule more enjoyable activities that bring fulfillment, meaning, or pleasure into your life. According to
+            Dr. Stern, behavioral activation may even potentially decrease the likelihood of depression for those seeing
+            a therapist for reasons other than MDD.
+        </p>
+        <p>
+            Therapy may be even more accessible now than ever before. Due to the pandemic, over three-quarters of
+            clinicians say they’re now providing their services remotely, primarily via phone or video on a designated
+            telehealth platform. So, you have no excuse not to make an appointment. Whether you have MDD or just
+            everyday mental health struggles, “research has shown, prior to COVID-19 and now increasingly with COVID-19,
+            that telehealth-based psychotherapy is incredibly effective,” Dr. Stern explains. “It allows psychotherapy
+            to be conducted very similarly to in-person psychotherapy, while decreasing barriers that may make it
+            difficult to attend sessions in person.” In other words, there’s no need to travel or find childcare, and
+            your session happens comfortably in your own home.
+        </p>
+
+        <h3 class="cnt8h3">Other Treatments</h3>
+        <p>
+            “Device treatments such as Transcranial Magnetic Stimulation (TMS) and Electroconvulsive Therapy (ECT) may
+            be beneficial and appropriate for certain individuals,” adds Dr. Stern. TMS, ECT, and vagus nerve
+            stimulation (VNS)—a newer treatment that involves surgically implanting a device similar to a pacemaker
+            along the peripheral nerve in the neck—are all types of brain-stimulating approaches that may sound very
+            sci-fi but can be effective after first trying therapy and medication.
+        </p>
+        <h3 class="cnt8h3">Health Habits</h3>
+        <p>
+            Any treatment for depression should coincide with maintaining a healthy diet, regular exercise, a productive
+            sleep schedule, and—yes—even mindful self-care practices. These are all helpful in alleviating or reducing
+            the severity of symptoms, says Dr. Stern.
+        </p>
+        <p>
+            Exercise helps you better cope with stress, and the endorphins released during exercise may give you a
+            mental boost. Increased research shows that “exercise and physical activity can have significant effects on
+            depression, and particularly in those with mild-to-moderate depression,” she adds. “This may include
+            cardiovascular workouts, stretching, or mindfulness-based physical activity like yoga.” The Centers for
+            Disease Control and Prevention (CDC) reports that physical activity also helps you sleep better at
+            night—setting off a chain reaction for a more supportive routine.
+        </p>
+        <p>
+            Meditation is another highly effective way of clearing your head and calming your body. You can also try
+            keeping a journal—some people find that it helps to express their thoughts on paper instead of bottling them
+            inside. Talk to close friends and family about your struggles, too. Having a social support system plays a
+            key part in maintaining your mental health and wellbeing.
+        </p>
+        <p>
+            Recovery is a journey, not a destination. Bad days will still come, but with well-targeted treatment, you
+            should be able to overcome extreme lows. While science has yet to find a cure for mental disorders such as
+            depression, it is entirely possible to live a happy and fulfilling life in spite of it.
+        </p>
+    </div>
+    <div class="cont10">
+        <h2>Realtionship</h2>
+        <p>
+            The catch-22 with depression is that your social network is incredibly important for manoeuvring through
+            feeling better, but it’s so easy to sabotage your connections to friends and family because you think you
+            want to be alone, or you become so withdrawn that people start to leave you alone.
+        </p>
+    </div>
+    <div class="cont11">
+        <h2>Depression and Suicide Risk</h2>
+        <p>
+            Depression usually does not lead to suicide ideation. But, according to the US Department of Health and
+            Human Services, studies have shown that about two percent of people who have been treated for depression in
+            an outpatient setting will die by suicide. If the treatment is inpatient, the number doubles to four
+            percent. Men are more likely to die by suicide after depression than women.
+        </p>
+    </div>
+
+    <script src="/topscroll.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+ .container {
+    position: absolute;
+    top: 20%;
+    left:40%;
+    height: 50vh;
+    width:50vh;
+    border: 1px solid rgb(8, 8, 8); 
+    border-radius: 14px ;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.3);   
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+} 
+
+
+
+.topnav {
+  background-color:transparent;
+  overflow: hidden;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 19px;
+transition: 0.3s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+background-color: transparent;
+color: rgb(18, 83, 159);
+font-weight: 600;
+font-size: 22px;
+
+}
+
+.topnav a.active:hover {
+    background-color: transparent;
+    color: rgb(199, 218, 87);
+    font-weight: 600;
+    font-size: 22px;
+    
+    }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+background-color: transparent;
+color: rgb(250, 248, 248);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+float: right;
+}
+
+.container .player-container{
+    height: 80%;
+    display: flex;
+    flex:1;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+#play-pause{
+display: flex;
+justify-content:center;
+cursor: pointer;
+position: relative;
+margin: 0 auto;
+margin-bottom: 0px;   
+}
+.player-container span {
+
+    display: flex;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(76, 231, 115);
+    background: rgba(0,0,0,0.5);
+    margin-top: 30px;
+    border-radius:10px ;
+    
+    
+}
+
+.video-container{
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#back{
+      
+    z-index:-1;
+    height:100vh;
+    width:100vw;
+    background-position: absolute;
+    z-index:-1;
+    object-fit: cover;
+}
+ h1{
+    text-align: center;
+    margin-bottom: 5px;
+    color:#fff;
+    font-family: 'Noto Serif', serif;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity:0.65;
+      }
+     
+     100%{
+        opacity:1;
+      }
+  }
+  .video-container,.topnav,.container {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-name: slideInLeft;
+}
+.controls{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:0;
+    width:80px;
+    z-index: 10;
+}
+.controls .asd{
+    position: relative;
+    width:80px;
+    height:80px;
+    background:none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+        
+}
+
+.controls{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:0;
+    width:80px;
+    z-index: 10;
+}
+.controls .asd{
+    position: relative;
+    width:80px;
+    height:80px;
+    background:none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+        
+}
+
+.controls :hover{
+    transition:1.8s;
+    opacity: 1;
+     background: #fff; 
+}
+#left{
+    transform: rotate(180deg) ;
+}

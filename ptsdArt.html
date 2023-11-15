@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="depcs.css">
+    <title>Your result</title>
+    <script type="text/javascript">
+        function change() {
+            var c = sessionStorage.getItem("c");
+
+            if (c >= 0 && c <= 3) {
+                document.getElementById("h1").innerHTML = "You do not have PTSD"
+            } else if (c >= 4 && c <= 13) {
+                document.getElementById("h1").innerHTML = "Mild Indication of PTSD";
+            } else if (c >= 14 && c <= 20) {
+                document.getElementById("h1").innerHTML = "Moderate indication of PTSD";
+            } else if (c >= 21 && c <= 24) {
+                document.getElementById("h1").innerHTML = "Severe indication of PTSD";
+            }
+        }
+    </script>
+
+</head>
+
+<body onload="change()">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+
+
+    <div class="container">
+        <nav>
+            <a href="/index.html"><img src="img/logo_transparent (7).png" alt="M.A.P" class="logo"></a>
+            <ul>
+
+                <li><a href="quiz.html">TEST?</a></li>
+                <li><a href="">FORUM</a></li>
+                <li><a href="faq.html">F.A.Q</a></li>
+                <li><a href="/destress.html">DESTRESS</a></li>
+            </ul>
+        </nav>
+        <h1>Test result:</h1>
+        <h1 id="h1"></h1>
+        <br>
+        <h2>Here are some articles, to know more about PTSD.</h2>
+
+        <div class="cont1">
+            <h2>What Is PTSD?</h2>
+            <p>
+                If you live through a terrifying event or experience, such as a horrific car crash, a killer tornado
+                that cripples your hometown, or domestic violence, you are likely to feel shattered and experience
+                difficulty coping and adjusting. However, as time goes on, and with good individual care, you are likely
+                to get better and move on with your life. On the other hand, if you can’t stop reliving the experiences
+                and it affects your everyday functioning, you might be suffering from post-traumatic stress disorder
+                (PTSD). If you are suffering from this debilitating condition, you are not alone, but great treatment
+                options are available.
+            </p>
+        </div>
+        <div class="cont2">
+            <h2>PTSD Symptoms</h2>
+            <p>
+                There is no way of knowing who will develop post-traumatic stress disorder after a traumatizing event.
+                As evidenced by past research, the majority of people who witness or live through a traumatic event will
+                not suffer from PTSD. Most will likely have memories of the events, but their lives will not become
+                negatively impacted by it in their daily interactions.
+            </p>
+            <p>
+                Symptoms of PTSD include:
+                <ul>
+                    <li>Avoidance</li>
+                    <li>Intrusive memories</li>
+                    <li>Changes in emotional reactions</li>
+                    <li>Negative changes in thinking and mood</li>
+                    <li>Flashbacks</li>
+                    <li>Jumpiness (literally “jumping out of one's skin”)</li>
+                    <li>Emotional detachment</li>
+
+                </ul>
+            </p>
+            <h3>These symptoms can come and go and vary in intensity.</h3>
+        </div>
+        <div class="img">
+            <img src="img/pt1.png" alt="" height="500px">
+        </div>
+        <div class="cont3">
+            <h2>PTSD Causes, Risk Factors, and Diagnosis</h2>
+            <p>
+                You are more likely to suffer from post-traumatic stress disorder if the traumatic event you endure is
+                life-threatening or severely traumatic to your personal safety. Additionally, the more exposure to the
+                event or prolonged exposure to a traumatic event is also more likely to increase your chances of
+                developing PTSD. Other risk factors of post-traumatic stress disorder include:
+                <ul>
+                    <li>Family history of PTSD and depression</li>
+                    <li>History of physical or sexual abuse</li>
+                    <li>High level of stress in your daily life</li>
+                    <li>Lack of coping skills</li>
+                    <li>Not getting help or support after the traumatic event</li>
+                    <li>History of depression, anxiety, or other mental illness</li>
+                    <li>History of substance abuse</li>
+                    <li>Careers that exposure you to traumatic experiences (e.g., military, police, first responders)
+                    </li>
+                    <li>Experiencing previous traumatic events, especially early in one’s life</li>
+                    <li>The extent that the traumatic event was uncontrollable, inescapable, or unexpected</li>
+                    <li>Type of traumatic event – intentional, human-afflicted harm (e.g., rape, sexual abuse) is more
+                        likely to result in PTSD than any natural disaster (e.g., hurricane, earthquake)</li>
+                </ul>
+            </p>
+            <p>
+                Suffering from post-traumatic stress disorder can increase your chances for other mental illnesses, such
+                as depression and anxiety, suicide, eating disorders, and issues with drugs and alcohol. Therefore, it
+                is especially important to seek treatment if you are suffering from PTSD for your own well-being. You
+                should seek treatment for post-traumatic stress disorder if you are experiencing any of these symptoms
+                and are not able to function or cannot function effectively in your day-to-day life. Individuals may be
+                affected differently by the symptoms of PTSD. PTSD symptoms in women, men, and children may present
+                themselves in a variety of situations depending upon the trauma they have experienced.
+                Diagnosis of post-traumatic stress disorder is completed by medical professionals. Your diagnosis will
+                be based on psychological evaluations of your signs and symptoms. To be diagnosed with post-traumatic
+                stress disorder, you must meet the criteria listed in the Diagnostic and Statistical Manual of Mental
+                Disorders published by the American Psychological Association. In addition to experiencing or witnessing
+                a traumatic event, you must experience one or more of the following after exposure to the traumatic
+                event:
+            </p>
+            <ul>
+                <li>Reliving the traumatic event</li>
+                <li>Upsetting dreams/nightmares about the traumatic event</li>
+                <li>Experience of flashbacks</li>
+                <li>Experience of emotional distress related to the traumatic event</li>
+
+            </ul>
+            <p>
+                In combination with these symptoms, you may also experience debilitating behaviors and emotions one
+                month or more post-traumatic event to include things such as avoidance behaviors, memory loss, emotional
+                numbness, self-destructive behavior, and difficulty sleeping.
+            </p>
+            <p>Your doctor or mental health professional will then make a diagnosis of post-traumatic stress disorder
+                and refer to you a number of treatment options.</p>
+        </div>
+
+        <div class="img">
+            <img src="img/pt2.png" alt="" height="500px">
+        </div>
+
+        <div class="cont4">
+            <h2>PTSD Treatment</h2>
+
+            <p>
+                Several types of treatment options are available if you are suffering from post-traumatic stress
+                disorder. The most often prescribed method of treatment is psychotherapy. Medications and other types of
+                physical treatment options are also prescribed. Your doctor will formulate the best treatment course of
+                action for you.
+            </p>
+            <p>
+                <strong>Psychotherapy</strong>, often referred to as “talk therapy” has been shown to elicit great
+                responses from sufferers of post-traumatic stress disorder. Cognitive therapy is focused on recognizing
+                patterns of thinking that get you “stuck” in your emotional state. For example, this type of therapy
+                might help you in recognizing cognitive patterns associated with negative perceptions of normal
+                situations.
+            </p>
+            <p>
+                <strong>Exposure therapy</strong> is often coupled with cognitive therapy if you have been diagnosed
+                with PTSD. It focuses on safe exposure to what is causing you intense fear. This exposure enables you to
+                cope with the stimulus effectively and rationally.
+            </p>
+            <p>
+                <strong>Eye movement desensitization and reprocessing (EMDR)</strong> is a form of therapy that combines
+                exposure therapy with guided eye movements. The combination of guided eye movements and exposure therapy
+                helps you in your cognitive processing of traumatic events and allows you to effectively change your
+                reactions to these types of events.
+            </p>
+        </div>
+        <div class="cont5">
+            <h2>What You Can Do Right Now</h2>
+            <p>
+                If you have experienced a terrifying traumatic event and now suffer from post-traumatic stress disorder
+                as a result, treatment does exist, and following it can help you to rebuild your life. To get the most
+                of your treatment plans, follow these pieces of advice:
+            </p>
+            <ul>
+                <li>Learn all you can about your disorder and what effects it has on your body – this allows you to
+                    recognize signs and symptoms and coping strategies</li>
+                <li>Follow the treatment plans prescribed to you by your doctors and mental health providers – even if
+                    you are feeling “fine”</li>
+                <li>Don’t turn to drugs and alcohol to “numb” your feelings</li>
+                <li>Stay healthy – eat well-balanced meals and exercise on a regular basis</li>
+                <li>Find support groups that can help you through difficult times – and to have a support base that you
+                    can talk to about anything</li>
+            </ul>
+        </div>
+
+        <script src="/topscroll.js"></script>
+
+</body>
+
+</html>

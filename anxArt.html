@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="depcs.css">
+    <title>Your result</title>
+    <script type="text/javascript">
+        function change() {
+            var c = sessionStorage.getItem("c");
+
+            if (c >= 0 && c <= 11) {
+                document.getElementById("h1").innerHTML = "You do not have anxiety"
+            } else if (c >= 12 && c <= 23) {
+                document.getElementById("h1").innerHTML = "Mild Indication of anxiety";
+            } else if (c >= 24 && c <= 35) {
+                document.getElementById("h1").innerHTML = "Moderate indication of anxiety";
+            } else if (c >= 36 && c <= 44) {
+                document.getElementById("h1").innerHTML = "Severe indication of anxiety";
+            }
+        }
+    </script>
+</head>
+
+<body onload="change()">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+
+    <nav>
+        <a href="/index.html"><img src="img/logo_transparent (7).png" alt="M.A.P" class="logo"></a>
+        <ul>
+
+            <li><a href="quiz.html">TEST?</a></li>
+            <li><a href="">FORUM</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="/destress.html">DESTRESS</a></li>
+        </ul>
+    </nav>
+    <h1>Test result:</h1>
+    <h1 id="h1"></h1>
+    <br>
+    <h2>Here are some articles, to know more about anxiety.</h2>
+    <div class="cont1">
+
+        <h2>What Is Anxiety?</h2>
+
+        <p>Who hasn't occasionally tossed and turned worrying about the what-ifs in life—job security, health concerns,
+            money woes, or relationship issues? Angst is a natural response to life’s ups, downs, twists, and turns.</p>
+        <p>
+            “A certain amount of worry and hyper-vigilance can be considered normal and healthy reactions to life
+            circumstances or immediate threats,” explains Marni Goldberg, LMFT, LPCC, whose San Diego, California-based
+            practice, Mindful Matters Counseling, specializes in anxiety, sensitivity, and life transitions.
+        </p>
+        <p>
+            In fact, anxiety, that uneasy, unsettling feeling that something unwelcome or uncertain is about to happen,
+            can even have some benefits. “Anxiety can help motivate you to work hard on important tasks, for example, or
+            protect yourself against an immediate threat of violence when your fight-or-flight instinct kicks in,” she
+            adds.
+        </p>
+        <p>
+            But anxiety can quickly take a turn from motivator to underminer when it brings along physical symptoms—your
+            heart starts racing, you sweat or get chills, your chest tightens, or you have trouble focusing—and there
+            are no immediate or dangerous threats present. Other symptoms can include shaking, stomachaches, excessive
+            worrying, ruminating, or avoidance of certain places, activities, or even people.
+        </p>
+        <p>
+            Here's the thing: anxiety by itself is not a disorder, says James Seymour, MD, director of the Chrysalis
+            Program at Sierra Tucson, a residential treatment center for people struggling with a variety of depressive
+            and mood disorders located in Tucson, Arizona.
+        </p>
+        <p>
+            “It's a physical and emotional symptom that we all experience, and it can have value. It is a sign that
+            something is wrong, physically or emotionally, or that we're not safe in the environment or within
+            ourselves,” he says. “Anxiety becomes problematic, however, when it affects functioning. When it's not
+            transient or fleeting, but static,” he adds. “That's when it's considered an anxiety disorder.”
+        </p>
+
+    </div>
+    <div class="cont2">
+        <h2>What Is An Anxiety Disorder?</h2>
+        <p>
+            Anxiety disorder is an umbrella term that refers to a category of psychiatric conditions characterized by
+            extreme fear or worry. Anxiety disorders are the most common mental illness in the United States, affecting
+            40 million adults in the United States age 18 and older, or 18.1% of the population every year.1
+            In addition, according to the World Health Organization (WHO), globally, 1 in 13 people suffer from anxiety.
+            In fact, WHO reports that anxiety disorders are the most common mental disorders worldwide with generalized
+            anxiety disorder (GAD) topping the list followed by specific phobia, major depressive disorder, and social
+            phobia.2 In this 2017 study, researchers estimate that 792 million people live with a mental health
+            disorder—slightly more than one in 10 people globally (10.7%).
+            The largest number of people had an anxiety disorder, estimated at around four percent of the
+            population—that 284 million, a staggering number.
+        </p>
+
+    </div>
+    <div class="cont3">
+        <h2>The Six Common Types of Anxiety Disorders</h2>
+
+        <ol>
+            <li>
+                <strong>Generalized Anxiety Disorder (GAD)</strong> is characterized by persistent and excessive worry
+                about everything. People with (GAD) may anticipate disaster and may be overly concerned about money,
+                health, family, work, or other issues. Individuals with GAD find it difficult to control their worry.
+                They may worry more than what seems warranted about actual events or expect the worst, even when there
+                is no apparent reason for concern.
+            </li>
+            <li>
+                <strong>Agoraphobia:</strong> Technically, this is defined by intense fear and anxiety of any place or
+                situation where escape might be difficult. Agoraphobia involves avoidance of situations such as being
+                alone outside of the home; traveling in a car, bus, or airplane; or being in a crowded area. You may
+                think of it as people who are afraid to leave their houses.
+            </li>
+            <li>
+                <strong>Panic Disorder:</strong> People who experience spontaneous, seemingly out-of-the-blue panic
+                attacks and are very preoccupied with the fear of a recurring attack. Panic attacks occur unexpectedly,
+                sometimes even when waking up from sleep. It's not like you're necessarily thinking about something
+                specific and the worry spirals into a panic attack.
+            </li>
+            <li>
+                <strong>Phobias</strong> are strong, irrational fear reactions in the presence or anticipation of a
+                specific object, place, or situation. Fear of heights is an example.
+            </li>
+            <li>
+                <strong>Separation Anxiety</strong> Separation anxiety refers to excessive fear or worries about
+                separation from home or someone very close to you.
+            </li>
+            <li>
+                <strong>Social Anxiety Disorder</strong> is a condition characterized by intense anxiety related to a
+                fear of being judged, negatively evaluated, or rejected in a social or performance situation is also
+                known as social anxiety disorder.
+            </li>
+        </ol>
+
+    </div>
+
+    <div class="img">
+        <img src="img/anx.png" alt="Statistics" height="750">
+    </div>
+    <div class="cont4">
+        <h2>Anxiety In Kids And Teens</h2>
+        <p>
+            Anxiety disorders are not exclusively adult afflictions either — angst can strike even young kids. According
+            to ADAA, one in eight children struggles with an anxiety disorder. The Centers For Disease Control and
+            Prevention (CDC) says 7.1% of children age 13-18 have some type of diagnosed anxiety disorder.
+        </p>
+        <p>
+            Prevalence rates of anxiety tend to increase with age and this increase is thought to be a function of how
+            our thought processes mature. That is, as our thinking develops it plays a considerable role in viewing
+            stressors. This is observed early on when signs of separation anxiety may first be seen when younger
+            children start school and struggle to adjust to leaving the comfort of their home and family. A teen’s
+            perspective of their world and how their peers view them (e.g., being embarrassed, bullied, or other public
+            humiliating experience) are key factors in the manifestation of social anxiety and its onset most often
+            appears during puberty.
+        </p>
+        <p>
+            Getting a handle on anxiety during childhood is important. Research has shown that children and teens with
+            untreated anxiety disorders are at higher risk of poor performance in school, social avoidance, and
+            substance use, as well as comorbidities including eating disorders and ADHD. Therapy, medication in some
+            cases, and familial support can help kids manage their anxiety, learn coping mechanisms early on, and lead
+            healthy lives.
+        </p>
+        <h3 class="cnt8h3">Signs and symptoms to watch out for:</h3>
+        <ol>
+            <li>Perpetual state of constant worry.</li>
+            <li>Inability to relax or enjoy quiet time.</li>
+            <li>Feeling tense all the time.</li>
+            <li>Muscle tightness or body aches.</li>
+            <li>Avoidance of stressful situations.</li>
+            <li>Difficulty concentrating.</li>
+            <li>Feeling constantly overwhelmed.</li>
+            <li>Not being able to sleep at all or to sleep well.</li>
+            <li>Feeling jumpy, on edge, or restless.</li>
+        </ol>
+    </div>
+    <div class="cont5">
+        <h2>Treat Generalized Anxiety Disorder</h2>
+        <p>
+            Some people find that medication alone can be helpful in the treatment of GAD, while others are more likely
+            to benefit from psychotherapy. Some find that the combination of psychotherapy and medication is the best
+            course of action. Engaging in certain behaviors may also ease your anxiety and promote a healthier
+            lifestyle.
+        </p>
+        <h3>These include:</h3>
+        <ul>
+            <li>Daily exercise. Studies have shown that aerobic exercise can decrease overall levels of tension, elevate
+                and stabilize mood, and improve sleep and self-esteem. As little as five minutes of daily exercise can
+                have anti-anxiety effects.
+            </li>
+            <li>
+                Eating a healthy, well-balanced diet. A healthy diet can’t cure anxiety, but it can contribute to
+                overall health and wellbeing. Eating breakfast high in protein, consuming foods high in complex
+                carbohydrates, drinking water, avoiding caffeine and alcohol, and paying attention to food sensitivities
+                can increase energy and motivation, reduce physical symptoms associated with anxiety, and improve mood
+                overall.
+            </li>
+        </ul>
+    </div>
+
+    <script src="/topscroll.js"></script>
+        
+</body>
+
+</html>

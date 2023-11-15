@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="center.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ee9313d832.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+    <title>Audio page new</title>
+</head>
+
+<body>
+    
+    <div class="video-container">
+        <video muted loop id="back">
+            <source src="/audio_mp/rain3_bg.mp4" type="video/mp4">
+            <img src="/rain-pos.jpg" type="image/jpg">
+        </video>
+
+    </div>
+
+    <div class="topnav">
+        <a class="active" href="/index.html"><img src="/img/logo_transparent (7).png" alt="M.A.P" class="logo" ></a>
+        <div class="topnav-right">
+          <a href="/quiz.html">Test</a>
+          <a href="/phpforum/">Forum</a>
+          <a href="/faq.html">F.A.Q</a>
+          <a href="/destress.html">Destress</a>
+          
+        </div>
+      </div>
+      <ul class="controls"> 
+        
+             <a href="winter.html" class="asd"><img src="/audio_mp/right-arrow.png" alt="" width="80px" height="80px"></a>
+             
+
+            
+      </ul> 
+    <div class="container">
+
+        
+
+        <div class="player-container">
+            <h1>Rain Ambience</h1>
+            
+            <div id="play-pause" class="">
+                <img src="White Play.png" alt="" width="90" height="90" id="button">
+            </div>
+
+            <audio id="track1">
+                <source src="rain2.mp3" type="audio/mp3" loop>
+            </audio>
+
+            <output id="volume-output1"></output>
+            <span>Rain <i class="fas fa-cloud-showers-heavy"></i> <input type="range" id="volumeSlider1" min="0"
+                    max="100" value="100"></span>
+
+            <audio id="track2">
+                <source src="birds.mp3" type="audio/mp3" loop>
+            </audio>
+
+            <output id="volume-output2"></output>
+            <span>Birds <i class="fas fa-dove"></i> <input type="range" id="volumeSlider2" min="0" max="100"
+                    value="50"></span>
+
+            <audio id="track3">
+                <source src="thunder3.mp3" type="audio/mp3" loop>
+            </audio>
+
+            <output id="volume-output3"></output>
+            <span>Thunder <i class="fas fa-cloud"></i> <input type="range" id="volumeSlider3" min="0" max="100"
+                    value="0"></span>
+
+
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    var track1 = document.getElementById('track1');
+    var track2 = document.getElementById('track2');
+    var track3 = document.getElementById('track3')
+    var video = document.getElementById('back');
+    var controlBtn = document.getElementById('play-pause');
+    var t3 = 0;
+
+
+    function playPause() {
+        if (track1.paused) {
+            track1.play();
+            track2.play();
+            video.play();
+            document.getElementById("button").src = "White Pause.png";
+            t3 = 1; //variable indicating play/pause only for track3
+
+            ///Looping function
+            var audio_file1 = document.getElementById("track1")
+            audio_file1.addEventListener('timeupdate', function () {
+                var buffer = 1.00;
+                if (this.currentTime > this.duration - buffer) {
+                    this.currentTime = 0;
+                    this.play();
+                }
+            });
+            var audio_file2 = document.getElementById("track2")
+            audio_file2.addEventListener('timeupdate', function () {
+                var buffer = 1.00;
+                if (this.currentTime > this.duration - buffer) {
+                    this.currentTime = 1;
+                    this.play();
+                }
+            });
+            var audio_file3 = document.getElementById("track3")
+            audio_file3.addEventListener('timeupdate', function () {
+                var buffer = .60;
+                if (this.currentTime > this.duration - buffer) {
+                    this.currentTime = 0;
+                    this.play();
+                }
+            });
+            //looping function done
+
+        } else {
+            track1.pause();
+            track2.pause();
+            track3.pause();
+            video.pause();
+            document.getElementById("button").src = "White Play.png";
+            t3 = 0;
+        }
+    }
+
+
+
+    controlBtn.addEventListener("click", playPause);
+    track1.addEventListener("ended", function () {
+        document.getElementById("button").src = "White Play.png";
+    });
+
+    /////JS vol-slider1//////
+    const audio1 = document.getElementById('track1');
+    const volumeSlider1 = document.getElementById('volumeSlider1');
+    const outputContainer1 = document.getElementById('volume-output1');
+
+    volumeSlider1.addEventListener('input', (e) => {
+        const value1 = e.target.value;
+        // outputContainer1.textContent = value1;
+        audio1.volume = value1 / 100;
+
+    });
+
+    /////JS vol-slider2//////
+    const audio2 = document.getElementById('track2');
+    const volumeSlider2 = document.getElementById('volumeSlider2');
+    const outputContainer2 = document.getElementById('volume-output2');
+
+    volumeSlider2.addEventListener('input', (e) => {
+        const value2 = e.target.value;
+        // outputContainer2.textContent = value2;
+        audio2.volume = value2 / 100;
+    });
+
+    /////JS vol-slider3//////
+    const audio3 = document.getElementById('track3');
+    const volumeSlider3 = document.getElementById('volumeSlider3');
+    const outputContainer3 = document.getElementById('volume-output3');
+
+    volumeSlider3.addEventListener('input', (e) => {
+
+        const value3 = e.target.value;
+        if (value3 > 0 && t3 == 1) {
+            track3.play();
+        }
+        // outputContainer3.textContent = value3;
+        audio3.volume = value3 / 100;
+    });
+</script>
+
+</html>

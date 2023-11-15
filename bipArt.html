@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="depcs.css">
+    <title>Your result</title>
+    <script type="text/javascript">
+        function change() {
+            var c = sessionStorage.getItem("c");
+
+            if (c >= 0 && c <= 3) {
+                document.getElementById("h1").innerHTML = "You do not have bipolar disorder"
+            } else if (c >= 4 && c <= 17) {
+                document.getElementById("h1").innerHTML = "Mild Indication of bipolar disorder";
+            } else if (c >= 18 && c <= 26) {
+                document.getElementById("h1").innerHTML = "Moderate indication of bipolar disorder";
+            } else if (c >= 27 && c <= 32) {
+                document.getElementById("h1").innerHTML = "Severe indication of bipolar disorder";
+            }
+        }
+    </script>
+</head>
+
+<body onload="change()">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>
+    <nav>
+        <a href="/index.html"><img src="img/logo_transparent (7).png" alt="M.A.P" class="logo"></a>
+        <ul>
+
+            <li><a href="quiz.html">TEST?</a></li>
+            <li><a href="">FORUM</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="/destress.html">DESTRESS</a></li>
+        </ul>
+    </nav>
+    <h1>Your result:</h1>
+    <h1 id="h1"></h1>
+    <h2>Here are some articles, to know more about bipolar disorder.</h2>
+    <div class="cont1">
+        <h2>What Is Bipolar Disorder?</h2>
+        <p>
+            Like the name suggests, bipolar disorder is marked by polar opposite mood swings—at one point, you feel like
+            you can conquer anything; at another, you can barely get your butt out of bed. Once called manic depression,
+            bipolar disorder affects up to 5.7 million adults. It impacts both men and women equally and the typical
+            onset of symptoms usually occurs between ages 15-25. Of course, those years are notoriously emotional
+            ones—first loves, college, new careers! Throw wonky energy levels into the mix, and, oof, things just got
+            more complicated. After all, how hard is it to plan your schedule or navigate your life when you don't know
+            which “you” you're getting that week?
+            Like many mental disorders, bipolar illness is genetic and tends to run in families, meaning oftentimes, one
+            or more family members also have a form of bipolar disorder. (It's important to note that the illness can
+            start in early childhood or as late as the 40s-50s.)
+        </p>
+    </div>
+    <div class="img">
+        <img src="img/bip.png" alt="">
+    </div>
+    <div class="cont2">
+        <h2>What Are the Signs and Symptoms of Bipolar Disorder?</h2>
+        <p>
+            Before you self-diagnose, remember, we're not talking about being down in the dumps over a breakup or having
+            a bad day, or being super-happy over a promotion or a new relationship. These are natural highs and lows
+            that everyone experiences. The classic symptoms of bipolar disorder are kind of like being on the steepest
+            roller coaster, where moods dip from the lowest depression to the highest high (mania or hypomania).
+        </p>
+        <p>
+            The signs and symptoms of bipolar disorder are as follows:
+        </p>
+    </div>
+    <div class="cont3">
+        <h2>Manic Episodes</h2>
+        <p>
+            When you live with bipolar disorder you can feel energetically happy with boundless energy during manic
+            states. You may make reckless decisions or act impulsively. You can get irritated and agitated easily and
+            act out, you can even feel euphoric, have a decreased need to sleep or insomnia, and have racing thoughts or
+            a grandiose self-image.
+        </p>
+        <p>
+            You may feel elated, like you just won the lottery, while really, it's just any old day and you're slogging
+            through a pile of dirty dishes. Hypomania, which people with bipolar may also experience, is a less severe
+            form of mania, where you generally feel pretty good'with a better sense of well-being and higher
+            productivity.
+        </p>
+        <p>
+            There's a laundry list of different symptoms for this manic phase, and they generally center around an
+            elevated or irritable mood. They may include goal-directed activities like staying up all night cleaning
+            obsessively or going on a shopping spree—things you wouldn't do typically. Manic behaviors may interfere
+            with school, work, and relationships. Specific signs and symptoms include:
+            <ul>
+                <li><strong>Abnormally upbeat:</strong> This isn't just a normal good mood. We're talking feeling zippy
+                    and energized, even in situations that don't warrant it, like feeling giddy taking out the trash.
+                    It's like you're not in charge of your mood, responding to your environment. Instead, you're just
+                    stuck on cheerful mode.
+                </li>
+                <li>
+                    <strong>Euphoric:</strong> This is beyond happy,your excitement and energy are almost uncontained.
+                </li>
+                <li>
+                    <strong>Jumpy:</strong> You can imagine when you have this kind of energy surge, you feel reactive.
+                    Picture electricity zooming through your body.
+                </li>
+                <li>
+                    <strong>Racing thoughts:</strong> It's hard to keep track of everything swirling around in your
+                    brain—you have all kinds of ideas, plans, and opinions.
+                </li>
+                <li>
+                    <strong>Abnormally talkative:</strong> You want to express all of these thoughts, so you're extra
+                    chatty and may jump from topic to topic.
+                </li>
+                <li>
+                    <strong>Pressured speech:</strong> This is a giveaway sign of a manic episode. It goes along with
+                    being talkative and is marked by a stream of talking, without pausing in the normal way you would
+                    during conversation. It's like just bulldozing right through and not allowing the other person to
+                    talk, talking over them.
+                </li>
+                <li>
+                    <strong>Wired:</strong> People having a manic episode feel like they can stay up all night or don't
+                    need as much sleep.
+                </li>
+                <li>
+                    <strong>Excess energy:</strong> You have all these ideas and energy and start taking on a lot of new
+                    projects.
+                </li>
+                <li>
+                    <strong>Poor decision-making:</strong> As you might imagine, a manic episode is not a great time for
+                    decision-making. Your emotions are skewed, and your sense of consequence and danger are dulled. It's
+                    a pretty scary combo. You may take risks like making financial investments, engaging in sexual
+                    indiscretions, or going on shopping sprees.
+                </li>
+                <li>
+                    <strong>Easily distracted:</strong> With all this internal racing going on, it's nearly impossible
+                    to focus.
+                </li>
+                <li>
+                    <strong>Cranky and/or impatient:</strong> You feel like no one can keep up with you, and it's
+                    frustrating.
+                </li>
+                <li>
+                    <strong>Invincibility:</strong> Along with this surge of energy and risk-taking, you get a huge
+                    boost in self-confidence. Even people who are shy or humble may suddenly seem arrogant and think
+                    they can literally do anything.
+                </li>
+                <li>
+                    <strong>High sex drive:</strong> You're constantly thinking about and wanting sex.
+                </li>
+                <li>
+                    <strong>Unattainable plans:</strong> You're determined to book a trip to Paris—even though you don't
+                    have the funds.
+                </li>
+                <li>
+                    <strong>Psychosis:</strong> A detachment from reality that may include delusions or hallucinations.
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="cont4">
+        <h2>Depressive Episodes</h2>
+        <p>
+            And here comes the crash. You may feel overwhelming sadness or an urge to cry, experience feelings of
+            hopelessness and worthlessness, and have a negative outlook on life. You may have an increased need to
+            sleep, not be able to complete daily tasks and feel deeply demoralized. This isn't just mild sadness but for
+            some can be debilitating depression that can even lead to suicidal thoughts. Again, this can happen when
+            nothing in your environment has brought on this mood.
+        </p>
+        <p>
+            “In the most severe instances of bipolar, psychotic features including hallucinations or delusions can be
+            present during extreme mood events,” says Michael Pipich, MS, LMFT, a psychotherapist and author of Owning
+            Bipolar: How Patients and Families Can Take Control of Bipolar Disorder.
+            Specific signs and symptoms include:
+        </p>
+        <ul>
+            <li><strong>Low energy:</strong> This is the kind of energy drain that makes you just want to lay on the
+                couch or under the covers all day.</li>
+            <li><strong>Low motivation:</strong> You just don't feel like doing anything.</li>
+            <li><strong>Loss of interest</strong> and finding no pleasure or interest in day-to-day activities. This is
+                a classic depression syndrome—things that used to be interesting and fun hold no appeal anymore.</li>
+            <li><strong>Feeling sad, tearful, hopeless, or empty on a daily basis.</strong> Picture feeling blah with a
+                tinge of sorrow, like the way you feel at the end of a really sad movie when you're done crying, the
+                credits are rolling, but you just can't turn the tv off; it's like you're immobile.</li>
+            <li><strong>Hopelessness:</strong> You can't picture anything good in the future.</li>
+            <li><strong>Weight fluctuations:</strong> Depending on whether depression zaps or increases your appetite, a
+                person suffering may gain or lose a significant amount of weight.</li>
+            <li><strong>Feelings of fatigue:</strong> You feel so tired and just want to sleep. (Though insomnia is also
+                a symptom.)
+            </li>
+            <li><strong>Indecisiveness:</strong> Maybe it's because you feel hopeless or ambivalent about everything,
+                but you really can't make your mind up, even about small things'</li>
+            <li><strong>Inability to concentrate:</strong> You lose your focus.</li>
+        </ul>
+        </p>
+        <p>
+            And just when you think your mood has hit rock bottom, the ride takes you back up to the summit with
+            feelings of euphoria and endless energy. It's these extreme mood swings that define bipolar disorder. They
+            can occur as frequently as weekly, or, show up more sporadically—maybe just twice a year.
+        </p>
+        <p>
+            Unlike a predictable monthly cycle or known allergy that triggers a reaction, there's no defined pattern or
+            predictability to the mood swings—i.e. you can't plan a job interview or vacation a week from Monday when
+            you'll be symptom-free. The condition just doesn't work like that. And, there's no rhyme or rhythm to which
+            will come first, the depression or the mania or vice versa. What's more, the length of time you're in one
+            state or the other can vary, too.
+        </p>
+
+    </div>
+
+    <div class="img">
+        <img src="img/bip2.png" alt="">
+    </div>
+    <div class="cont5">
+        <h2>What Causes Bipolar Disorder?</h2>
+        <p>
+            Like most mental illnesses, researchers haven't pinpointed a single cause, but it seems that a combination
+            of genes and environmental factors can awaken bipolar. Scientists have learned that a number of genes are
+            associated with the disorder, meaning it's about 80 percent genetic. If you have a first-degree relative
+            with the disorder, you're at higher risk for developing it, and if you have relatives with other mental
+            health conditions, you may have increased risk as well. But not everyone who has bipolar disorder in their
+            family will get the illness.
+            Scientists have learned that a number of genes are associated with the disorder, meaning it's about 80%
+            genetic. If you have a first-degree relative with the disorder, you're at higher risk for developing it, and
+            if you have relatives with other mental health conditions, you may have increased risk as well. But not
+            everyone who has bipolar disorder in their family will get the illness.
+
+        </p>
+        <p>
+            Environmental factors also play a role in developing bipolar. And these interact with genetic
+            predispositions to trigger the onset of the disorder. These include diet, sleep, substance use and abuse,
+            the stability of your relationships, the atmosphere in the home if you're an adolescent, stress, and early
+            childhood trauma. This means is that if you're living with bipolar disorder, it was probably a mixture of
+            genes and environmental factors or life events that triggered the disorder to present itself.
+        </p>
+        <p>
+            While some people who have bipolar have suffered from some type of early traumatic event, abuse, or a
+            troubling and/or stressful episode, many others cannot link to anything specific in their past.
+        </p>
+        <p>
+            With those differences, it's not surprising that bipolar disorder is frequently misidentified and
+            mistreated. “Research shows that nearly two-thirds of people with bipolar have been misdiagnosed at least
+            one time in their lives and will have suffered nearly 10 years of untreated symptoms before receiving proper
+            care,” Pipich says.
+        </p>
+        <p>
+            This gap in treatment is usually the result of misunderstanding bipolar illness—how it presents itself in
+            episodes that can come and go, and the stigma of having a chronic mental illness, especially when symptoms
+            are present in a young person, explains Pipich.
+        </p>
+        <p>
+            And sometimes, other issues are simply masking the bipolar. Many patients will be diagnosed with the
+            condition only after they seek sobriety for alcohol or drug abuse. Why the link? People often like how they
+            feel when they are manic and think that level of creativity, productivity, and euphoria is helpful to their
+            life so they try to replace it with substances like drugs and alcohol, explains Michelle English, LCSW,
+            co-founder and clinical director of Healthy Life Recovery, a San Diego-based rehab and addiction center. “On
+            the flipside, manic people with bipolar disorders may use substances to help them relax, sleep, and calm
+            down,” English says.
+        </p>
+        <p>
+            What's important is if you suspect you may have bipolar disorder, see your doctor so you can manage the
+            condition and live a productive life without the ups and downs of extreme mood swings.
+        </p>
+    </div>
+    <div class="cont6">
+        <h2>What's Going On In The Brain?</h2>
+        <p>
+            Up until recently, researchers hadn't been able to distinguish a person with bipolar's brain from a person
+            without the disorder on a scan. But science is making some tracks. A 2019 study that looked at the brains of
+            people with bipolar and those with depression on functional MRI scans correctly differentiated their brains
+            about 80% of the time.
+        </p>
+        <p>
+            The findings suggest differences in the amygdala, the emotion center of the brain, of people with bipolar
+            when they process emotions like sadness, anger, fear, and joy, and could become a marker to help identify
+            bipolar disorder on brain scans. Likewise, bipolar affects brain biochemistry and neurotransmitters in the
+            brain that produce chemical variations such as oxytocin, GABA, dopamine, and serotonin. These chemicals may
+            be unbalanced in the brains of people with bipolar disorders. But as of yet, researchers aren't clear on how
+            too little GABA or too many oxytocin-active neurons play a role in the disorder or whether measuring them
+            can help.
+        </p>
+    </div>
+    <div class="cont7">
+        <p>
+            Bipolar disorders are most common in older adolescents and teens, but children can also be diagnosed with
+            the disorder at a younger age. While not nearly as common in children as it is in adults, research studies
+            have revealed that bipolar disorder affects as many as 3% of all children and up to 7% of children receiving
+            outpatient psychiatric care. (The numbers are even higher in children hospitalized for inpatient psychiatric
+            treatment.) Bipolar disorder has been diagnosed in children as young as 5. When young children experience
+            symptoms, this is called early-onset bipolar disorder.
+        </p>
+        <p>
+            Bipolar disorder is more likely to affect the children of parents who have the disorder. When one parent has
+            bipolar disorder, the risk to each child is l5 to 30%. When both parents have bipolar disorder, the risk
+            increases to 50 to 75%. (National Institute of Mental Health)
+        </p>
+        <p>
+            Bipolar in kids also causes distinct mood episodes from mania or hypomania to depression. However, because
+            kids and adolescents can act out, have difficulty in school or at home, and display some of the symptoms of
+            bipolar disorders, like restlessness, impulsivity, risky behaviors, and an inflated view of capabilities,
+            even when they don't have the disorder, it can be difficult to diagnose.
+        </p>
+        <p>
+            It is important to note that a number of other childhood disorders cause bipolar-like symptoms, including
+            attention-deficit/hyperactivity disorder (ADHD), oppositional defiant disorder, conduct disorder, anxiety
+            disorders, and major depression. Arriving at the correct diagnosis presents challenges because these and
+            other mental health conditions often occur along with bipolar disorder.
+        </p>
+        <p>
+            If your child is struggling with behaviors like a depressed mood, loss of interest in activities, negative
+            thinking, suicidal thoughts, or a decreased need for sleep, impulsivity, or aggressive or socially
+            inappropriate behavior, they should see a mental health professional that specializes in children. And for
+            kids with a family history of bipolar, parents should be vigilant about watching for symptoms and looking
+            for help early. Getting diagnosed and treated earlier can prevent serious consequences and help kids keep
+            their moods in check and manage symptoms from a younger age.
+        </p>
+    </div>
+    <div class="cont8">
+        <h2>How Is Bipolar Disorder Treated?</h2>
+        <p>
+            Medications and psychotherapy are the most commonly prescribed treatment plans for people suffering from
+            bipolar disorder. And the success rate of these plans is very high if you follow them consistently.
+        </p>
+        <h3>Medications</h3>
+        <p>
+            Depending on how severe your symptoms are, your provider may prescribe medication to help get you out of a
+            manic or depressive state. Avoiding drugs and alcohol and taking your medication as prescribed—even on days
+            you feel fine—can help you lead a normal, productive life. The most common medications used to treat
+            bipolar:
+            <ul>
+                <li><strong>Mood stabilizers</strong> work to level your mood, so it won't tip toward mania or
+                    depression. Lithium is one of the most well-known and effective mood stabilizers for people with
+                    bipolar disorder.</li>
+                <li>
+                    <strong>Antidepressants</strong> work for depressive states, so if that is your most severe symptom,
+                    you may also benefit from one of many types of antidepressants prescribed to treat bipolar
+                    disorders.
+                </li>
+                <li>
+                    <strong>Atypical antipsychotics</strong> may be used if your bipolar disorder symptoms include
+                    hallucinations, delusions, or severe mania. There are a number of antipsychotics also used in the
+                    treatment of bipolar disorders.
+                </li>
+            </ul>
+            <p>
+                Often, the first course of drug therapy is the prescription of mood stabilizers. You may also be
+                prescribed an anticonvulsant for use as a mood stabilizer. Atypical antipsychotics are sometimes
+                combined with antidepressants to treat the disorders.
+            </p>
+            <p>
+                Because the use of antidepressants can trigger hypomanic or manic states, you will likely take an
+                antidepressant with a mood stabilizer to even out your emotions. “We usually choose a medication based
+                on a predominant symptom like, say, not sleeping at all,” Dr. Narasimhan says. “I may choose an agent
+                that is very sedating while stabilizing their mood.”
+            </p>
+            <p>
+                “If a person has bipolar II and is predominantly depressed, I may choose an agent that works well but
+                requires a slow titration, where you have to increase the dose slowly,” she says. If someone has more
+                mild symptoms that can afford to wait over six to eight weeks as their dose gets perfected, that works
+                well, too. “It's a tailored approach.”
+            </p>
+            <p>
+                Most patients respond very well to medicine, some just with a minimum dose. Other times doses need to be
+                increased or a second medication added. Some meds can take up to six weeks to kick in, so if yours isn't
+                working by then, your physician might need to tweak it.
+            </p>
+            <h3>Psychotherapy</h3>
+            <p>
+                <strong>Psychotherapy</strong>Studies show psychotherapy has also been an effective tool for people
+                living with bipolar disorder. Cognitive behavioral therapy helps you learn how to change negative or
+                harmful thoughts or behaviors.
+            </p>
+            <p>
+                <strong>Family-focused </strong> therapies involve family members and focus on teaching you coping
+                strategies, communication, and problem-solving techniques.
+            </p>
+            <p>
+                <strong>Interpersonal and social rhythm therapy (IPSRT)</strong> is often used in treating bipolar
+                disorder as well, as this form of psychotherapy focuses on the stabilization of daily rhythms—sleep,
+                wake, mealtimes—to introduce consistent routines to better manage moods.
+            </p>
+            <p>
+                <strong>Dialectical behavior therapy, (DBT)</strong> is also an effective treatment for bipolar
+                disorders. DBT concentrates on regulating your emotions better so when you're manic, you can have tools
+                to help cope, English explains. She says you may do sensory type activities like breath work to calm
+                down or put your feet in water or hold a frozen object to help bring you back to reality and teach you
+                to live in the moment.
+            </p>
+            <p>
+                <strong>Psychoeducation</strong> has also been a powerful therapeutic tool to teach those living with
+                bipolar disorder about their condition and how to treat it. This education allows you to notice triggers
+                and impending mood swings so you can seek treatment before a full-blown episode happens.
+            </p>
+
+    </div>
+    <script src="/topscroll.js"></script>
+</body>
+
+</html>

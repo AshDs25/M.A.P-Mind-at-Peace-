@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz1.css">
+    <script type="text/javascript">
+        function check() {
+            var c = 0;
+            var q1 = document.ptsdquiz.question1.value;
+            var q2 = document.ptsdquiz.question2.value;
+            var q3 = document.ptsdquiz.question3.value;
+            var q4 = document.ptsdquiz.question4.value;
+            var q5 = document.ptsdquiz.question5.value;
+            var q6 = document.ptsdquiz.question6.value;
+
+            var set = true;
+
+
+
+            if (q1 == "0") {
+                c = c + 0;
+            } else if (q1 == "1") {
+                c = c + 1;
+            } else if (q1 == "2") {
+                c = c + 2;
+            } else if (q1 == "3") {
+                c = c + 3;
+            } else if (q1 == "4") {
+                c = c + 4;
+            } else {
+                set = false;
+            }
+
+
+            if (q2 == "0") {
+                c = c + 0;
+            } else if (q2 == "1") {
+                c = c + 1;
+            } else if (q2 == "2") {
+                c = c + 2;
+            } else if (q2 == "3") {
+                c = c + 3;
+            } else if (q2 == "4") {
+                c = c + 4;
+            } else if (q2 == "4") {
+                c = c + 4;
+            } else {
+                set = false;
+            }
+
+            if (q3 == "0") {
+                c = c + 0;
+            } else if (q3 == "1") {
+                c = c + 1;
+            } else if (q3 == "2") {
+                c = c + 2;
+            } else if (q3 == "3") {
+                c = c + 3;
+            } else if (q3 == "4") {
+                c = c + 4;
+            } else if (q3 == "4") {
+                c = c + 4;
+            } else {
+                set = false;
+            }
+
+            if (q4 == "0") {
+                c = c + 0;
+            } else if (q4 == "1") {
+                c = c + 1;
+            } else if (q4 == "2") {
+                c = c + 2;
+            } else if (q4 == "3") {
+                c = c + 3;
+            } else if (q4 == "4") {
+                c = c + 4;
+            } else {
+                set = false;
+            }
+
+            if (q5 == "0") {
+                c = c + 0;
+            } else if (q5 == "1") {
+                c = c + 1;
+            } else if (q5 == "2") {
+                c = c + 2;
+            } else if (q5 == "3") {
+                c = c + 3;
+            } else if (q5 == "4") {
+                c = c + 4;
+            } else {
+                set = false;
+            }
+
+            if (q6 == "0") {
+                c = c + 0;
+            } else if (q6 == "1") {
+                c = c + 1;
+            } else if (q6 == "2") {
+                c = c + 2;
+            } else if (q6 == "3") {
+                c = c + 3;
+            } else if (q6 == "4") {
+                c = c + 4;
+            } else {
+                set = false;
+            }
+
+
+
+            if (set == true) {
+                //document.getElementById("depquiz").submit();
+                sessionStorage.setItem("c", c);
+                window.location.href = "ptsdArt.html";
+            } else {
+                document.write("you skipped some fields,please re attempt the quiz");
+
+            }
+        }
+    </script>
+    <title>QUIZ</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/index.html"><img src="img/logo_transparent (7).png" alt="M.A.P" class="logo"></a>
+        <ul>
+
+            <li><a href="quiz.html">TEST?</a></li>
+            <li><a href="">FORUM</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="/destress.html">DESTRESS</a></li>
+        </ul>
+    </nav>
+    <div class="container2">
+        <p>
+            <h1>PTSD (Post-Traumatic Stress Disorder) Test</h1>
+        </p>
+        <br>
+        <p>Over the last two weeks,how often have you been bothered by any of the following problems?</p><br>
+        <form name="ptsdquiz" id="ptsdquiz">
+            <ol>
+                <li>
+                    <p>Repeated, disturbing memories, thoughts, or images of a stressful experience from the past</p>
+                    <input type="radio" name="question1" value="0" id="A1">
+                    <label for="A1">Never</label><br>
+                    <input type="radio" name="question1" value="1" id="B1">
+                    <label for="B1">Rarely</label><br>
+                    <input type="radio" name="question1" value="2" id="C1">
+                    <label for="C1">Sometimes</label><br>
+                    <input type="radio" name="question1" value="3" id="D1">
+                    <label for="D1">Often</label><br>
+                    <input type="radio" name="question1" value="4" id="E1">
+                    <label for="E1">Very Often</label><br>
+
+                </li><br>
+                <li>
+                    <p>Feeling very upset when something reminded you of a stressful experience from the past?</p>
+                    <input type="radio" name="question2" value="0" id="A2">
+                    <label for="A2">Never</label><br>
+                    <input type="radio" name="question2" value="1" id="B2">
+                    <label for="B2">Rarely</label><br>
+                    <input type="radio" name="question2" value="2" id="C2">
+                    <label for="C2">Sometimes</label><br>
+                    <input type="radio" name="question2" value="3" id="D2">
+                    <label for="D2">Often</label><br>
+                    <input type="radio" name="question2" value="4" id="E2">
+                    <label for="E2">Very Often</label><br>
+                </li><br>
+                <li>
+                    <p>Avoid activities or situations because they remind you of a stressful experience from the past?
+                    </p>
+                    <input type="radio" name="question3" value="0" id="A3">
+                    <label for="A3">Never</label><br>
+                    <input type="radio" name="question3" value="1" id="B3">
+                    <label for="B3">Rarely</label><br>
+                    <input type="radio" name="question3" value="2" id="C3">
+                    <label for="C3">Sometimes</label><br>
+                    <input type="radio" name="question3" value="3" id="D3">
+                    <label for="D3">Often</label><br>
+                    <input type="radio" name="question3" value="4" id="E3">
+                    <label for="E3">Very Often</label><br>
+                </li><br>
+                <li>
+                    <p>Feeling distant or cut off from other people?</p>
+                    <input type="radio" name="question4" value="0" id="A4">
+                    <label for="A4">Never</label><br>
+                    <input type="radio" name="question4" value="1" id="B4">
+                    <label for="B4">Rarely</label><br>
+                    <input type="radio" name="question4" value="2" id="C4">
+                    <label for="C4">Sometimes</label><br>
+                    <input type="radio" name="question4" value="3" id="D4">
+                    <label for="D4">Often</label><br>
+                    <input type="radio" name="question4" value="4" id="E4">
+                    <label for="E4">Very Often</label><br>
+                </li><br>
+                <li>
+                    <p>Feeling irritable or having angry outbursts?</p>
+                    <input type="radio" name="question5" value="0" id="A5">
+                    <label for="A5">Never</label><br>
+                    <input type="radio" name="question5" value="1" id="B5">
+                    <label for="B5">Rarely</label><br>
+                    <input type="radio" name="question5" value="2" id="C5">
+                    <label for="C5">Sometimes</label><br>
+                    <input type="radio" name="question5" value="3" id="D5">
+                    <label for="D5">Often</label><br>
+                    <input type="radio" name="question5" value="4" id="E5">
+                    <label for="E5">Very Often</label><br>
+                </li><br>
+                <li>
+                    <p>Having difficulty concentrating?</p>
+                    <input type="radio" name="question6" value="0" id="A6">
+                    <label for="A6">Never</label><br>
+                    <input type="radio" name="question6" value="1" id="B6">
+                    <label for="B6">Rarely</label><br>
+                    <input type="radio" name="question6" value="2" id="C6">
+                    <label for="C6">Sometimes</label><br>
+                    <input type="radio" name="question6" value="3" id="D6">
+                    <label for="D6">Often</label><br>
+                    <input type="radio" name="question6" value="4" id="E6">
+                    <label for="E6">Very Often</label><br>
+                </li><br>
+
+            </ol>
+            <input type="button" value="submit" onclick="check()">
+        </form>
+        <br>
+
+    </div>
+</body>
+
+</html>

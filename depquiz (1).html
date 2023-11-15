@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz1.css">
+    <script type="text/javascript">
+        function check() {
+            var c = 0;
+            var q1 = document.depquiz.question1.value;
+            var q2 = document.depquiz.question2.value;
+            var q3 = document.depquiz.question3.value;
+            var q4 = document.depquiz.question4.value;
+            var q5 = document.depquiz.question5.value;
+            var q6 = document.depquiz.question6.value;
+            var q7 = document.depquiz.question7.value;
+            var q8 = document.depquiz.question8.value;
+            var q9 = document.depquiz.question9.value;
+            var set = true;
+
+
+
+            if (q1 == "0") {
+                c = c + 0;
+            } else if (q1 == "1") {
+                c = c + 1;
+            } else if (q1 == "2") {
+                c = c + 2;
+            } else if (q1 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+
+            if (q2 == "0") {
+                c = c + 0;
+            } else if (q2 == "1") {
+                c = c + 1;
+            } else if (q2 == "2") {
+                c = c + 2;
+            } else if (q2 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q3 == "0") {
+                c = c + 0;
+            } else if (q3 == "1") {
+                c = c + 1;
+            } else if (q3 == "2") {
+                c = c + 2;
+            } else if (q3 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q4 == "0") {
+                c = c + 0;
+            } else if (q4 == "1") {
+                c = c + 1;
+            } else if (q4 == "2") {
+                c = c + 2;
+            } else if (q4 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q5 == "0") {
+                c = c + 0;
+            } else if (q5 == "1") {
+                c = c + 1;
+            } else if (q5 == "2") {
+                c = c + 2;
+            } else if (q5 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q6 == "0") {
+                c = c + 0;
+            } else if (q6 == "1") {
+                c = c + 1;
+            } else if (q6 == "2") {
+                c = c + 2;
+            } else if (q6 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q7 == "0") {
+                c = c + 0;
+            } else if (q7 == "1") {
+                c = c + 1;
+            } else if (q7 == "2") {
+                c = c + 2;
+            } else if (q7 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q8 == "0") {
+                c = c + 0;
+            } else if (q8 == "1") {
+                c = c + 1;
+            } else if (q8 == "2") {
+                c = c + 2;
+            } else if (q8 == "3") {
+                c = c + 3;
+            } else {
+                set = false;
+            }
+
+            if (q9 == "0") {
+                c = c + 0;
+            } else if (q9 == "1") {
+                c = c + 1;
+                // document.write("\nYour answer indicates that you may be at risk of hurting youself.Please seek help immediately")
+
+            } else if (q9 == "2") {
+                c = c + 2;
+                //document.write("\nYour answer indicates that you may be at risk of hurting youself.Please seek help immediately")
+
+            } else if (q9 == "3") {
+                c = c + 3;
+                //document.write("\nYour answer indicates that you may be at risk of hurting youself.Please seek help immediately")
+            } else {
+                set = false;
+            }
+
+            if (set == true) {
+                //document.getElementById("depquiz").submit();
+                sessionStorage.setItem("c", c);
+                window.location.href = "depArt.html";
+            } else {
+                document.write("you skipped some fields,please re attempt the quiz");
+
+            }
+            //check if any input value is not set 	
+
+
+
+        }
+
+
+        // 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.
+
+        // 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.
+    </script>
+    <title>QUIZ</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="/index.html"><img src="img/logo_transparent (7).png" alt="M.A.P" class="logo"></a>
+        <ul>
+
+            <li><a href="quiz.html">TEST?</a></li>
+            <li><a href="">FORUM</a></li>
+            <li><a href="faq.html">F.A.Q</a></li>
+            <li><a href="/destress.html">DESTRESS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container2">
+        <h1>Depression TEST</h1>
+        <br>
+        <p>Over the last two weeks,how often have you been bothered by any of the following problems?</p><br>
+        <form name="depquiz" id="depquiz">
+            <ol>
+                <li>
+                    <p>Little interest or pleasure in doing things?</p>
+                    <input type="radio" name="question1" value="0" id="A1" required />
+                    <label for="A1">Not at all</label><br>
+                    <input type="radio" name="question1" value="1" id="B1">
+                    <label for="B1">Several days</label><br>
+                    <input type="radio" name="question1" value="2" id="C1">
+                    <label for="C1">More than half the days</label><br>
+                    <input type="radio" name="question1" value="3" id="D1">
+                    <label for="D1">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Feeling down, depressed, or hopeless?</p>
+                    <input type="radio" name="question2" value="0" id="A2" required>
+                    <label for="A2">Not at all</label><br>
+                    <input type="radio" name="question2" value="1" id="B2">
+                    <label for="B2">Several days</label><br>
+                    <input type="radio" name="question2" value="2" id="C2">
+                    <label for="C2">More than half the days</label><br>
+                    <input type="radio" name="question2" value="3" id="D2">
+                    <label for="D2">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Trouble falling or staying asleep, or sleeping too much?</p>
+                    <input type="radio" name="question3" value="0" id="A3">
+                    <label for="A3">Not at all</label><br>
+                    <input type="radio" name="question3" value="1" id="B3">
+                    <label for="B3">Several days</label><br>
+                    <input type="radio" name="question3" value="2" id="C3">
+                    <label for="C3">More than half the days</label><br>
+                    <input type="radio" name="question3" value="3" id="D3">
+                    <label for="D3">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Feeling tired or having little energy?</p>
+                    <input type="radio" name="question4" value="0" id="A4">
+                    <label for="A4">Not at all</label><br>
+                    <input type="radio" name="question4" value="1" id="B4">
+                    <label for="B4">Several days</label><br>
+                    <input type="radio" name="question4" value="2" id="C4">
+                    <label for="C4">More than half the days</label><br>
+                    <input type="radio" name="question4" value="3" id="D4">
+                    <label for="D4">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Poor appetite or overeating??</p>
+                    <input type="radio" name="question5" value="0" id="A5">
+                    <label for="A5">Not at all</label><br>
+                    <input type="radio" name="question5" value="1" id="B5">
+                    <label for="B5">Several days</label><br>
+                    <input type="radio" name="question5" value="2" id="C5">
+                    <label for="C5">More than half the days</label><br>
+                    <input type="radio" name="question5" value="3" id="D5">
+                    <label for="D5">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Feeling bad about yourself - or that you are a failure or have let yourself or your family down?
+                    </p>
+                    <input type="radio" name="question6" value="0" id="A6">
+                    <label for="A6">Not at all</label><br>
+                    <input type="radio" name="question6" value="1" id="B6">
+                    <label for="B6">Several days</label><br>
+                    <input type="radio" name="question6" value="2" id="C6">
+                    <label for="C6">More than half the days</label><br>
+                    <input type="radio" name="question6" value="3" id="D6">
+                    <label for="D6">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Trouble concentrating on things, such as reading the newspaper or watching television? </p>
+                    <input type="radio" name="question7" value="0" id="A7">
+                    <label for="A7">Not at all</label><br>
+                    <input type="radio" name="question7" value="1" id="B7">
+                    <label for="B7">Several days</label><br>
+                    <input type="radio" name="question7" value="2" id="C7">
+                    <label for="C7">More than half the days</label><br>
+                    <input type="radio" name="question7" value="3" id="D7">
+                    <label for="D7">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Moving or speaking so slowly that other people could have noticed?
+                        Or the opposite - being so fidgety or restless <br> that you have been moving around a lot more
+                        than usual??</p>
+                    <input type="radio" name="question8" value="0" id="A8">
+                    <label for="A8">Not at all</label><br>
+                    <input type="radio" name="question8" value="1" id="B8">
+                    <label for="B8">Several days</label><br>
+                    <input type="radio" name="question8" value="2" id="C8">
+                    <label for="C8">More than half the days</label><br>
+                    <input type="radio" name="question8" value="3" id="D8">
+                    <label for="D8">Nearly every day</label>
+                </li><br>
+                <li>
+                    <p>Thoughts that you would be better off dead, or of hurting yourself in some way?</p>
+                    <input type="radio" name="question9" value="0" id="A9">
+                    <label for="A9">Not at all</label><br>
+                    <input type="radio" name="question9" value="1" id="B9">
+                    <label for="B9">Several days</label><br>
+                    <input type="radio" name="question9" value="2" id="C9">
+                    <label for="C9">More than half the days</label><br>
+                    <input type="radio" name="question9" value="3" id="D9">
+                    <label for="D9">Nearly every day</label>
+                </li><br>
+            </ol>
+            <input type="button" value="submit" onclick="check()">
+        </form>
+        <br>
+
+    </div>
+</body>
+
+</html>
